@@ -1,0 +1,22 @@
+Name:                css
+Version:             0.1
+Synopsis:            Minimal monadic CSS DSL.
+Description:         Minimal monadic CSS DSL. Type-safe property values to come later.
+License:             BSD3
+License-file:        LICENSE
+Author:              Chris Done <chrisdone@gmail.com>
+Maintainer:          Chris Done <chrisdone@gmail.com>
+Copyright:           2010 Chris Done
+Category:            Language
+Build-type:          Simple
+Cabal-version:       >=1.2
+Stability:           Experimental
+
+Library
+  Exposed-modules:   Language.CSS, Language.CSS.Types, Language.CSS.Properties
+  Other-modules:     Data.Monoid.Operator
+  Ghc-options:       -Wall
+  Build-depends:     base >= 4 && < 5
+                    ,text >= 0.11
+                    ,mtl  >= 2.0
+  Hs-source-dirs:    src
