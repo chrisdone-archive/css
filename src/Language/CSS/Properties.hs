@@ -19,7 +19,7 @@ prop name value = tell [Left $ Property name value]
 
 -- | CSS property: -ms-filter
 msFilter :: Text -> CSS (Either Property Rule)
-msFilter = prop "-mz-filter"
+msFilter = prop "-ms-filter"
 
 -- Additional ones from CSS3
 
